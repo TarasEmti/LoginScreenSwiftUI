@@ -8,18 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		7698BC20265A695400E79F43 /* loginApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7698BC1F265A695400E79F43 /* loginApp.swift */; };
-		7698BC22265A695400E79F43 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7698BC21265A695400E79F43 /* ContentView.swift */; };
+		7698BC22265A695400E79F43 /* LoginContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7698BC21265A695400E79F43 /* LoginContentView.swift */; };
 		7698BC24265A695400E79F43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7698BC23265A695400E79F43 /* Assets.xcassets */; };
 		7698BC27265A695400E79F43 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7698BC26265A695400E79F43 /* Preview Assets.xcassets */; };
+		7698BC2F265AC57B00E79F43 /* ErrorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7698BC2E265AC57B00E79F43 /* ErrorProtocol.swift */; };
+		7698BC31265AC5B000E79F43 /* PasswordValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7698BC30265AC5B000E79F43 /* PasswordValidator.swift */; };
+		7698BC33265AC6E300E79F43 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7698BC32265AC6E300E79F43 /* View+Extensions.swift */; };
+		7698BC35265AD90B00E79F43 /* AccountValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7698BC34265AD90B00E79F43 /* AccountValidator.swift */; };
+		7698BC37265ADBCD00E79F43 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7698BC36265ADBCD00E79F43 /* Network.swift */; };
+		7698BC39265AF67600E79F43 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7698BC38265AF67600E79F43 /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7698BC1C265A695400E79F43 /* loginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = loginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7698BC1F265A695400E79F43 /* loginApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginApp.swift; sourceTree = "<group>"; };
-		7698BC21265A695400E79F43 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7698BC21265A695400E79F43 /* LoginContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginContentView.swift; sourceTree = "<group>"; };
 		7698BC23265A695400E79F43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7698BC26265A695400E79F43 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7698BC28265A695400E79F43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7698BC2E265AC57B00E79F43 /* ErrorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorProtocol.swift; sourceTree = "<group>"; };
+		7698BC30265AC5B000E79F43 /* PasswordValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordValidator.swift; sourceTree = "<group>"; };
+		7698BC32265AC6E300E79F43 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		7698BC34265AD90B00E79F43 /* AccountValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountValidator.swift; sourceTree = "<group>"; };
+		7698BC36265ADBCD00E79F43 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		7698BC38265AF67600E79F43 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +65,13 @@
 			isa = PBXGroup;
 			children = (
 				7698BC1F265A695400E79F43 /* loginApp.swift */,
-				7698BC21265A695400E79F43 /* ContentView.swift */,
+				7698BC21265A695400E79F43 /* LoginContentView.swift */,
+				7698BC38265AF67600E79F43 /* LoginViewModel.swift */,
+				7698BC36265ADBCD00E79F43 /* Network.swift */,
+				7698BC34265AD90B00E79F43 /* AccountValidator.swift */,
+				7698BC30265AC5B000E79F43 /* PasswordValidator.swift */,
+				7698BC2E265AC57B00E79F43 /* ErrorProtocol.swift */,
+				7698BC32265AC6E300E79F43 /* View+Extensions.swift */,
 				7698BC23265A695400E79F43 /* Assets.xcassets */,
 				7698BC28265A695400E79F43 /* Info.plist */,
 				7698BC25265A695400E79F43 /* Preview Content */,
@@ -138,8 +156,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7698BC22265A695400E79F43 /* ContentView.swift in Sources */,
+				7698BC22265A695400E79F43 /* LoginContentView.swift in Sources */,
 				7698BC20265A695400E79F43 /* loginApp.swift in Sources */,
+				7698BC2F265AC57B00E79F43 /* ErrorProtocol.swift in Sources */,
+				7698BC33265AC6E300E79F43 /* View+Extensions.swift in Sources */,
+				7698BC39265AF67600E79F43 /* LoginViewModel.swift in Sources */,
+				7698BC35265AD90B00E79F43 /* AccountValidator.swift in Sources */,
+				7698BC37265ADBCD00E79F43 /* Network.swift in Sources */,
+				7698BC31265AC5B000E79F43 /* PasswordValidator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
